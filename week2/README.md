@@ -1,20 +1,12 @@
-# Materijal 
+# How to Name HTML Files
 
-Selektuj granu (branch) za materijal po nedeljama.
-- Prva Nedelja: **01-html**
-- Druga Nedelja: **02-html**
-- Treca Nedelja:  **03-css**
-- Cetvrta Nedelja: **04-css**
-- Peta Nedelja: **05-js**
-- Sesta Nedelja: **06-js**
+1. 📖 How to Name HTML Files: https://www.thoughtco.com/naming-html-files-3466503
 
----
-# Korisni Linkovi 
-1. To check is HTML document Valid: https://validator.w3.org/ 
-2. Documentation W3School: https://www.w3schools.com/html/default.asp
-3. Editor VSCODE: https://code.visualstudio.com/download
-4. Editor Notepad++: https://notepad-plus-plus.org/downloads/
-5. Browsers statistics: https://www.w3schools.com/browsers/
-6. Global Stats: https://gs.statcounter.com/browser-market-share
 
-*Instalirati poslednje verzije editora*
+## Zanimljivi blog postovi:
+
+1. 📖 https://css-tricks.com/html-inputs-and-labels-a-love-story/?fbclid=IwAR3LbMdaiXNp7hihFKGSRDVyIJxZw00-Ct02HGb5aGV4kG5zsFTH8kQZmo4
+
+# Video Lekcije
+1. 📹 Razlika izmedju margine i paddinga: https://www.youtube.com/watch?v=Svb5u48MJBI
+2. 📹 Border-box VS Content-box: https://www.youtube.com/watch?v=-KHllRdkupE
