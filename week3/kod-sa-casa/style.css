@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.text-red{
+    color: red;
+}
+
+.fw-200 {
+    font-weight: 200;
+}

@@ -1,0 +1,308 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1, .h1 {
+    font-size: 34px;
+}
+
+h2, .h2 {
+    font-size: 30px;
+}
+
+h3, .h3 {
+    font-size: 28px;
+}
+
+h4, .h4 {
+    font-size: 24px;
+}
+
+h5, .h5 {
+    font-size: 20px;
+}
+
+h6, .h6 {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Utility Base */
+.p-12 {
+    padding: 12px;
+}
+
+.my-12 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+
+/* CSS Metodology - Sistemi nazivanja klasa */
+
+.card {
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 12px;
+    /*overflow: hidden;*/
+}
+
+.card-img {
+    object-fit: cover;
+    width: 100%;
+    height: 214px;
+    border-radius: 4px;
+}
+
+.card-body {
+    padding: 12px;
+}
+
+.card-footer {
+    padding: 12px;
+}
+
+.mx-12 {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+/*
+Bad practice
+.login {
+    font-size: 16px;
+    padding: 12px 16px; 
+    border-radius: 6px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: cadetblue;
+    color: #ffffff;
+    border: 1px solid cadetblue;
+}
+
+.register {
+    font-size: 16px;
+    padding: 12px 16px; 
+    border-radius: 6px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: rgb(93, 134, 141);
+    color: #ffffff;
+    border: 1px solid rgb(93, 134, 141);
+}
+*/
+
+.btn {
+    font-size: 16px;
+    padding: 12px 16px; 
+    border-radius: 6px;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    /*
+    padding: 12px 14px 16px 13px;/* top right bottom left 
+    padding: 12px 15px 13px; top 15-left and right bottom
+    padding: 12px 16px; 12 - top and bottom 16 - left and right
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;   */
+}
+
+.btn-primary {
+    background-color: cadetblue;
+    color: #ffffff;
+    border: 1px solid transparent;
+}
+
+.btn-primary:hover {
+    background-color: rgb(201, 248, 250);
+    color: #d8d8d8;
+    border: 1px solid blue;
+}
+
+.btn-secondary {
+    background-color: rgb(212, 212, 212);
+    color: #000000;
+    border: 1px solid rgb(212, 212, 212);
+}
+
+.btn-secondary:hover {
+    background-color: rgb(78, 78, 78);
+    color: #a07575;
+    border: 1px solid rgb(78, 78, 78);
+}
+
+.p-16 {
+    padding: 16px;
+}
+.bg-dark {
+    background-color: black;
+}
+
+.text-white {
+    color: white;
+}
+
+.author {
+    font-style: italic;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form {
+    padding: 16px;
+    width: 50%;
+}
+
+.form-label {
+    font-size: 18px;
+    color: hotpink;
+} 
+
+.form-input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 6px;
+}
+

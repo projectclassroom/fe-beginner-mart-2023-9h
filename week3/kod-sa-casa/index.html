@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Example</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <h1>My First Blog</h1>
+        <button class="btn btn-primary">Shop</button>
+    </header>
+    <main>
+        <section class="my-12">
+            <h2 class="h1">Best Views</h2>
+            <div class="p-12">
+                <h3>Naslov 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates distinctio vel cupiditate.</p>
+            </div>
+        </section>
+        <section>
+            <!--
+                Ne zelim da svako dugme ima mx margin 
+                vec stavljam po potrebi kada mi treba
+                mx - po x-osi
+                my - po y-osi
+            -->
+            <button class="btn btn-primary mx-12" >Login </button>
+            <button class="btn btn-secondary">Register </button>
+        </section>
+
+
+        <!-- class="section row container wrapper" -->
+        <section>
+            <article class="card my-12">
+                <img class="card-img"  src="https://picsum.photos/600/300" >
+                <div class="card-body">
+                    <h2>Lorem, ipsum.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab excepturi nihil natus.</p>
+                </div>
+                <footer class="card-footer">
+                    <a href="">See More</a>
+                </footer>
+            </article>
+            <article class="card my-12">
+                <img class="card-img"  src="https://picsum.photos/700/300" >
+                <div class="card-body">
+                    <h2>Lorem, ipsum.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab excepturi nihil natus.</p>
+                </div>
+                <footer class="card-footer">
+                    <a href="">See More</a>
+                </footer>
+            </article>
+            <article class="card my-12">
+                <img class="card-img"  src="https://picsum.photos/700/300" >
+                <div class="card-body">
+                    <h2>Lorem, ipsum.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab excepturi nihil natus.</p>
+                </div>
+                <footer class="card-footer">
+                    <a href="">See More</a>
+                </footer>
+            </article>
+        </section>
+        <section>
+
+            <article>
+                <form class="form mx-auto">
+                    <label class="form-label">Name</label>
+
+                    <input class="form-input my-12" type="text">
+
+                    <label class="form-label">LastName</label>
+
+                    <input class="form-input my-12" type="text">
+
+                    <label class="form-label">Email</label>
+
+                    <input class="form-input my-12" type="email">
+
+                    <button type="submit" class="btn btn-primary">Contact</button>
+                </form>
+            </article>
+
+        </section>
+    </main>
+    <footer class="bg-dark text-white p-16">
+        <p class="text-center">&copy; Nature Blog <span class="text-italic ">by John Doe</span> | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
