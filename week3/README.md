@@ -130,3 +130,63 @@ Dakle, kada css selektori imaju isto pravilo možemo ih grupisati tako što ćem
 
 Na ovaj način imamo manje linija kod i kod je čitljiviji.
 
+
+
+**CSS** - Cassading Style Sheet
+
+### Tri načina kako uključiti css u HTML dokument
+
+1.  Inline style
+2.  Unutar style taga
+3.  External fajl
+
+#### Inline style
+
+Inline stilizacija direktno utiču na tag, bez korišćenja selektora.
+
+```html
+<p style="color:red;">This is a paragraph.</p>
+```
+
+#### Style tag
+
+```html
+<!-- Used for adding in-document CSS -->
+<style>
+  /* ... */
+</style>
+```
+
+#### External fajl
+
+```html
+
+<!-- Link to an external CSS file -->
+<link rel="stylesheet" href="styles.css">
+```
+
+#### [**⬆ back to top**](#)
+
+#### **Komentari u CSS**
+
+---
+
+Komentari nemaju uticaja na layout HTML dokumenta. Služe da bliže objasne kod ili da spreče pretraživač da interpretira određena pravila koja su deo css-a.
+
+```css
+/* Jednolinijski komentar */
+
+/*
+Komentar može da
+se piše i u
+više linija
+*/
+
+/* Komentar ispod služi da onemogući definisanu stilizaciju */
+
+/*
+.card {
+    padding: 1rem; 
+}
+*/
+```
