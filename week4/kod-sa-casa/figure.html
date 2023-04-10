@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figure Tag</title>
+</head>
+<body>
+    <!-- Slika sa opisom - za korisnika -->
+    <div>
+        <img src="./nature.jpg" width="360" height="150" alt="">
+        <p>This is nature photo</p>
+    </div>
+
+    <!-- Image with description -->
+    <figure>
+        <img src="./nature.jpg" width="360" height="150" alt="">
+        <figcaption>
+            This is a nature photo
+        </figcaption>
+    </figure>
+
+    <!-- Quotes -->
+    <figure>
+        <figcaption><b>Jane Doe</b></figcaption>
+        <blockquote>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ex consectetur dolorum.
+        </blockquote>
+    </figure>
+
+    <!-- Code snippets -->
+    <figure>
+        <figcaption>JS code</figcaption>
+        <pre>
+            function onNavChange() {
+                let name = document.getElementById('name').value;
+                document.getElementById('card-container').innerHTML = name;
+            }
+        </pre>
+    </figure>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+         * {
+            box-sizing: border-box;
+        }
+        html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+
+        .nav {
+            height: 72px;
+            text-align: center;
+        }
+
+        .nav-list {
+            height: 100%;
+            line-height: 72px;
+        }
+
+        .nav-item {
+            display: inline-block;
+            margin-left: 16px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            font-size: 24px;
+            color: orangered;
+            text-transform: uppercase;
+        }
+
+        .nav-link:hover {
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav" >
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 style="display: inline;">Inace sam block element, ali sada sam inline</h2>
+            <label style="display: block;">Ovo je labela koja je block el</label>
+            <p style="display: none;">Ja se ne vidim na stranici</p>
+        </section>
+        <section>
+            <label style="margin: 12px;">Ovo je labela</label>
+        </section>
+    </main>
+</body>
+</html>

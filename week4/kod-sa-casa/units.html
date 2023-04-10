@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body, h1 {
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            background-color: brown;
+            height: 100vh;
+        }
+        /*Odnosi se na ceo document*/
+        html {
+            font-size: 12px;
+        }
+
+        h1 {
+            font-size: 1rem; /* default font je 16px - 1* 16px  */
+        }
+
+        h2 {
+            font-size: 3rem; /* na koji god element da satimo REM jedinicu onda gleda default font size od dokumenta*/
+        }
+
+        /*em jedinice gledaju svog roditelja i na osvu toga racunaju font size*/
+
+        .container {
+            font-size: 22px;
+        }
+        h3 {
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+
+        <h1>Naslov</h1>
+        <h2>Naslov 2 mnogo veci 3*12</h2>
+
+
+        <div class="container">
+            <h3>Naslov 3</h3>
+        </div>
+    </main>
+
+</body>
+</html>

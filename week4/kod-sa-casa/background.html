@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body, h1, h2, h3, h4, h5, h6, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(./gradient.png);
+            background-size: cover;
+            background-attachment: fixed;
+
+        }
+
+        .hero-image {
+            background-image: url('./banner-1.jpg'); /*Slika koju koristim*/
+            background-color: rgb(139, 139, 139); /* boja pozadine u slucaju da se slika ne ucita */
+            height: 500px; /*Obavezno definisemo visinu slike*/
+            background-position: center; /*Centriramo sliku*/
+            background-repeat: no-repeat; /*Da nema ponavljanja ni horizontalno ni vertikalno*/
+            background-size: cover;
+            position: relative;
+        }
+
+        h1 {
+            color: brown;
+            font-size: 36px;
+            position: absolute; 
+            left: 50px;
+            bottom: 20px;
+        }
+
+        .container {
+            position: relative;
+        }
+        .top-left {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            color: coral;
+        }
+        .bottom-right {
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+            color: orange;
+        }
+
+        .card {
+            border: 1px solid black;
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: white;
+            position: relative;
+        }
+        .card-img {
+            height: 214px;
+            object-fit: cover;
+            width: 100%;
+        }
+        .card-body {
+            padding: 16px;
+        }
+
+        .card-tag {
+            background-color: rgb(17, 212, 33);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 10px;
+            position: absolute;
+            top: 12px;
+            right: 12px;
+        }
+
+
+        .container-center {
+            background-color: rgb(85, 243, 164);
+            height: 600px;
+            position: relative;
+        }
+        .center {
+            color: crimson;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <!-- <img src="./nature.jpg" height="360" width="720" alt="" > -->
+
+    <div class="hero-image">
+        <h1>Naslov</h1>
+    </div>
+
+
+    <div class="container">
+        <img src="./nature.jpg" height="360px" style="width: 100%;" >
+        <h3 class="top-left">Top left</h3>
+        <h3 class="bottom-right">Bottom right</h3>
+    </div>
+
+    <div class="card"  style="width:320px;" >
+        <span class="card-tag">nature</span>
+        <img class="card-img" src="./nature.jpg" height="360px" style="width: 100%;" >
+        <div class="card-body">
+            <h2>Lorem 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, repellendus reiciendis! Modi?</p>
+        </div>
+    </div>
+
+    <div class="container-center">
+        <h2 class="center">Ja sam centriran</h2>
+    </div>
+
+    <section>
+        <h2>Naslov 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque hic doloribus, beatae, ducimus, corporis itaque officia debitis perspiciatis illo maiores provident accusantium corrupti quidem ipsa nam odit quo! Alias, earum iure tempora numquam illum doloremque at accusantium magnam iusto temporibus facilis aliquid! Cumque voluptatem numquam, quis reprehenderit minus molestias beatae non, provident alias facere quibusdam, fugiat in ducimus quaerat corporis sit impedit obcaecati accusamus aperiam voluptate ex laborum consequatur veritatis voluptatibus. Vitae, voluptatem nihil. Aspernatur, maxime architecto! Veniam perferendis molestiae repellat, nostrum eius eum iure molestias quae iusto quam placeat excepturi, modi vero illo autem nemo, libero eveniet veritatis nihil similique laudantium! Quidem iste eveniet nulla est atque deserunt esse veniam, reprehenderit quas? Quam suscipit soluta ex impedit, rerum possimus optio. Sequi, laudantium.</p>
+    </section>
+    <section>
+        <h2>Naslov 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque hic doloribus, beatae, ducimus, corporis itaque officia debitis perspiciatis illo maiores provident accusantium corrupti quidem ipsa nam odit quo! Alias, earum iure tempora numquam illum doloremque at accusantium magnam iusto temporibus facilis aliquid! Cumque voluptatem numquam, quis reprehenderit minus molestias beatae non, provident alias facere quibusdam, fugiat in ducimus quaerat corporis sit impedit obcaecati accusamus aperiam voluptate ex laborum consequatur veritatis voluptatibus. Vitae, voluptatem nihil. Aspernatur, maxime architecto! Veniam perferendis molestiae repellat, nostrum eius eum iure molestias quae iusto quam placeat excepturi, modi vero illo autem nemo, libero eveniet veritatis nihil similique laudantium! Quidem iste eveniet nulla est atque deserunt esse veniam, reprehenderit quas? Quam suscipit soluta ex impedit, rerum possimus optio. Sequi, laudantium.</p>
+    </section>
+    <section>
+        <h2>Naslov 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque hic doloribus, beatae, ducimus, corporis itaque officia debitis perspiciatis illo maiores provident accusantium corrupti quidem ipsa nam odit quo! Alias, earum iure tempora numquam illum doloremque at accusantium magnam iusto temporibus facilis aliquid! Cumque voluptatem numquam, quis reprehenderit minus molestias beatae non, provident alias facere quibusdam, fugiat in ducimus quaerat corporis sit impedit obcaecati accusamus aperiam voluptate ex laborum consequatur veritatis voluptatibus. Vitae, voluptatem nihil. Aspernatur, maxime architecto! Veniam perferendis molestiae repellat, nostrum eius eum iure molestias quae iusto quam placeat excepturi, modi vero illo autem nemo, libero eveniet veritatis nihil similique laudantium! Quidem iste eveniet nulla est atque deserunt esse veniam, reprehenderit quas? Quam suscipit soluta ex impedit, rerum possimus optio. Sequi, laudantium.</p>
+    </section>
+    <section>
+        <h2>Naslov 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque hic doloribus, beatae, ducimus, corporis itaque officia debitis perspiciatis illo maiores provident accusantium corrupti quidem ipsa nam odit quo! Alias, earum iure tempora numquam illum doloremque at accusantium magnam iusto temporibus facilis aliquid! Cumque voluptatem numquam, quis reprehenderit minus molestias beatae non, provident alias facere quibusdam, fugiat in ducimus quaerat corporis sit impedit obcaecati accusamus aperiam voluptate ex laborum consequatur veritatis voluptatibus. Vitae, voluptatem nihil. Aspernatur, maxime architecto! Veniam perferendis molestiae repellat, nostrum eius eum iure molestias quae iusto quam placeat excepturi, modi vero illo autem nemo, libero eveniet veritatis nihil similique laudantium! Quidem iste eveniet nulla est atque deserunt esse veniam, reprehenderit quas? Quam suscipit soluta ex impedit, rerum possimus optio. Sequi, laudantium.</p>
+    </section>
+
+</body>
+</html>
