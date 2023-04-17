@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a = 5;
+        let b = 3;
+        let c = 2;
+
+        //veci od tri broja
+        //a je najveci ako je veci od b i c
+        /*if (a > b && a > c) {
+            console.log("a je najveci")
+        } else if (b > a && b > c) {
+            console.log("b je najveci")
+        } else {
+            console.log("c je najveci")
+        }*/
+
+        //trazimo najmanju vrednost
+        let min = a; //pretpostavim da je a najmanji
+
+        if (b < min) { //da li je b manje od trenutnog minimuma
+            min = b; //ako jeste imam novi minimum
+        } 
+        
+        
+        if (c < min){//da li je c manje od min
+            min = c;
+        }
+
+
+        console.log("Min value is "+ min);
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
