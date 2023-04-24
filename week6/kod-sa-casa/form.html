@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="./form.css">
+    <script>
+        function onValidateForm(event) {
+            console.log(event)
+            event.preventDefault(); //nemoj da radis ono sto inace radis
+            //da li je input name prazan
+        
+            const name = document.getElementById('name').value;
+            const lname = document.getElementById('lname').value;
+            const email = document.getElementById('email').value;
+            const age = Number(document.getElementById('age').value);
+            //age je string moram ga konvertovati u broj
+
+            // age = Number(age);
+
+            const phone = document.getElementById('phone').value;
+            // true 
+            // !true -> false
+            // !false -> true
+
+            // '' -> false
+            // !'' -> true
+            if (name == '') { 
+                // alert('Please Enter Name');
+                document.getElementById('error-name').innerHTML = 'Please Enter Name';
+                // return; //napusta funkciju ne proverava dalje
+            } 
+            
+            if (lname == '') {
+                document.getElementById('error-lname').innerHTML = 'Please Enter Last Name';
+            }
+            
+            if (email == '') {
+                document.getElementById('error-email').innerHTML = 'Please Enter Email';
+            }
+
+            // da li age izmedju 18 i 35
+
+            
+            // if (age >= 18 && age <= 25 ) { //ako je tacan sve okej, ne treba mi poruka
+
+            // }   
+
+            if (age < 18 || age > 35) { 
+                document.getElementById('error-age').innerHTML = 'Please Enter Valid age';
+            }
+
+            if (phone == '') {
+                document.getElementById('error-phone').innerHTML = 'Please Enter Phone';
+            }
+
+
+
+
+
+            // if (!null) { //ulazi ako je vrednost null
+
+            // }
+
+
+
+            // if (1 == '1') { //true
+
+            // }
+            // if (1 === '1') { //false
+
+            // }
+        
+        }
+    </script>
+</head>
+<body>
+    
+
+    <form onsubmit="onValidateForm(event)">
+        <label>Name:</label>
+        <input type="text" value="" id="name">
+        <br>
+        <p class="error-msg" id="error-name"></p>
+
+        <label>Lastname:</label>
+        <input type="text" value="" id="lname">
+        <br>
+        <p class="error-msg" id="error-lname"></p>
+        <label>Email:</label>
+        <input type="email" value="" id="email">
+        <br>
+        <p class="error-msg" id="error-email"></p>
+
+        <label>Age:</label>
+        <input type="number" value="18" id="age">
+        <p class="error-msg" id="error-age"></p>
+
+
+        <label>Phone Number:</label>
+        <input type="number" value="" id="phone">
+        <br>
+        <p class="error-msg" id="error-phone"></p>
+
+        <button type="submit">SEND</button>
+    </form>
+</body>
+</html>

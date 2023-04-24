@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./landingPage.css">
+    <script>
+        function onNavChange(nav) {
+            //ako je nav zapravo nav-home
+            if (nav == 'nav-home') {
+                //priakzi home, nemojprikazati about, nemoj prikazati contact
+                document.getElementById('home').style.display = "block"; //prikazi se
+                document.getElementById('about').style.display = "none";
+                document.getElementById('contact').style.display = "none";
+
+                document.getElementById('nav-home').classList.add('active');
+                document.getElementById('nav-about').classList.remove('active');
+                document.getElementById('nav-contact').classList.remove('active');
+
+            } else if (nav == 'nav-about') {
+                document.getElementById('home').style.display = "none"; 
+                document.getElementById('about').style.display = "block";
+                document.getElementById('contact').style.display = "none";
+
+                document.getElementById('nav-home').classList.remove('active');
+                document.getElementById('nav-about').classList.add('active');
+                document.getElementById('nav-contact').classList.remove('active');
+
+            } else if (nav == 'nav-contact') {
+                document.getElementById('home').style.display = "none";
+                document.getElementById('about').style.display = "none";
+                document.getElementById('contact').style.display = "block";
+
+                
+                document.getElementById('nav-home').classList.remove('active');
+                document.getElementById('nav-about').classList.remove('active');
+                document.getElementById('nav-contact').classList.add('active');
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item active" id="nav-home" onclick="onNavChange('nav-home')"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item" id="nav-about" onclick="onNavChange('nav-about')"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item" id="nav-contact" onclick="onNavChange('nav-contact')"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>HomePage</h2>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur aspernatur itaque accusantium dolor voluptate ullam aliquid in ipsa aperiam temporibus autem harum enim optio praesentium, reiciendis eveniet eius eos impedit architecto. Ullam, veniam. Culpa voluptatum repellat consequuntur ipsum cum necessitatibus id voluptatibus, alias accusantium numquam adipisci obcaecati doloribus incidunt iusto commodi eius corrupti natus. Delectus doloremque voluptas quas natus tenetur veritatis minima quidem, molestiae exercitationem assumenda eius nostrum obcaecati! Quod ea ad aperiam beatae dicta alias veniam voluptatem, tenetur reiciendis saepe, eum sequi placeat dolor porro temporibus ducimus! Qui minima illum laboriosam hic ab dignissimos amet porro libero eveniet cupiditate esse id earum neque in quis, assumenda fuga, totam delectus maiores non aliquam. Adipisci aut commodi veritatis? Veniam, numquam! Quas expedita praesentium libero!</p>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur aspernatur itaque accusantium dolor voluptate ullam aliquid in ipsa aperiam temporibus autem harum enim optio praesentium, reiciendis eveniet eius eos impedit architecto. Ullam, veniam. Culpa voluptatum repellat consequuntur ipsum cum necessitatibus id voluptatibus, alias accusantium numquam adipisci obcaecati doloribus incidunt iusto commodi eius corrupti natus. Delectus doloremque voluptas quas natus tenetur veritatis minima quidem, molestiae exercitationem assumenda eius nostrum obcaecati! Quod ea ad aperiam beatae dicta alias veniam voluptatem, tenetur reiciendis saepe, eum sequi placeat dolor porro temporibus ducimus! Qui minima illum laboriosam hic ab dignissimos amet porro libero eveniet cupiditate esse id earum neque in quis, assumenda fuga, totam delectus maiores non aliquam. Adipisci aut commodi veritatis? Veniam, numquam! Quas expedita praesentium libero!</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur aspernatur itaque accusantium dolor voluptate ullam aliquid in ipsa aperiam temporibus autem harum enim optio praesentium, reiciendis eveniet eius eos impedit architecto. Ullam, veniam. Culpa voluptatum repellat consequuntur ipsum cum necessitatibus id voluptatibus, alias accusantium numquam adipisci obcaecati doloribus incidunt iusto commodi eius corrupti natus. Delectus doloremque voluptas quas natus tenetur veritatis minima quidem, molestiae exercitationem assumenda eius nostrum obcaecati! Quod ea ad aperiam beatae dicta alias veniam voluptatem, tenetur reiciendis saepe, eum sequi placeat dolor porro temporibus ducimus! Qui minima illum laboriosam hic ab dignissimos amet porro libero eveniet cupiditate esse id earum neque in quis, assumenda fuga, totam delectus maiores non aliquam. Adipisci aut commodi veritatis? Veniam, numquam! Quas expedita praesentium libero!</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur aspernatur itaque accusantium dolor voluptate ullam aliquid in ipsa aperiam temporibus autem harum enim optio praesentium, reiciendis eveniet eius eos impedit architecto. Ullam, veniam. Culpa voluptatum repellat consequuntur ipsum cum necessitatibus id voluptatibus, alias accusantium numquam adipisci obcaecati doloribus incidunt iusto commodi eius corrupti natus. Delectus doloremque voluptas quas natus tenetur veritatis minima quidem, molestiae exercitationem assumenda eius nostrum obcaecati! Quod ea ad aperiam beatae dicta alias veniam voluptatem, tenetur reiciendis saepe, eum sequi placeat dolor porro temporibus ducimus! Qui minima illum laboriosam hic ab dignissimos amet porro libero eveniet cupiditate esse id earum neque in quis, assumenda fuga, totam delectus maiores non aliquam. Adipisci aut commodi veritatis? Veniam, numquam! Quas expedita praesentium libero!</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur aspernatur itaque accusantium dolor voluptate ullam aliquid in ipsa aperiam temporibus autem harum enim optio praesentium, reiciendis eveniet eius eos impedit architecto. Ullam, veniam. Culpa voluptatum repellat consequuntur ipsum cum necessitatibus id voluptatibus, alias accusantium numquam adipisci obcaecati doloribus incidunt iusto commodi eius corrupti natus. Delectus doloremque voluptas quas natus tenetur veritatis minima quidem, molestiae exercitationem assumenda eius nostrum obcaecati! Quod ea ad aperiam beatae dicta alias veniam voluptatem, tenetur reiciendis saepe, eum sequi placeat dolor porro temporibus ducimus! Qui minima illum laboriosam hic ab dignissimos amet porro libero eveniet cupiditate esse id earum neque in quis, assumenda fuga, totam delectus maiores non aliquam. Adipisci aut commodi veritatis? Veniam, numquam! Quas expedita praesentium libero!</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur aspernatur itaque accusantium dolor voluptate ullam aliquid in ipsa aperiam temporibus autem harum enim optio praesentium, reiciendis eveniet eius eos impedit architecto. Ullam, veniam. Culpa voluptatum repellat consequuntur ipsum cum necessitatibus id voluptatibus, alias accusantium numquam adipisci obcaecati doloribus incidunt iusto commodi eius corrupti natus. Delectus doloremque voluptas quas natus tenetur veritatis minima quidem, molestiae exercitationem assumenda eius nostrum obcaecati! Quod ea ad aperiam beatae dicta alias veniam voluptatem, tenetur reiciendis saepe, eum sequi placeat dolor porro temporibus ducimus! Qui minima illum laboriosam hic ab dignissimos amet porro libero eveniet cupiditate esse id earum neque in quis, assumenda fuga, totam delectus maiores non aliquam. Adipisci aut commodi veritatis? Veniam, numquam! Quas expedita praesentium libero!</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
